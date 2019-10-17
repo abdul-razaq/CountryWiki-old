@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url('./img2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2rem;
+  text-rendering: optimizeLegibility;
+  line-height: 2;
+  color: #444343;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 4rem auto;
+  background-color: #fcfcfc;
+  padding: 0 6rem;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 5rem #272727;
+}
+
+.main-header {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 300;
+  color: #0c9292;
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+  color: #037474;
+}
+
+.form-group {
+  padding-bottom: 4rem;
+}
+
+.form__input {
+  border: none;
+  outline: none;
+  border: 1.4px solid #0c92928f;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  display: block;
+  width: 70%;
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  color: #0c9292;
+  transition: all .3s ease-out;
+}
+
+.form__input::selection {
+  background-color: #0c9292;
+  color: #fff;
+}
+
+.form__input:focus {
+  border: 1.4px solid #0c9292f6;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  display: block;
+  background-color: #0d9c9c;
+  color: #fff;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 4rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px #6e6e6e;
+  transition: all .3s ease-out;
+}
+
+.btn:hover {
+  background-color: #0a8686;
+  transform: translateY(-4px);
+}
+
+.btn:active {
+  box-shadow: 1px 1px 1px #6e6e6e;
+  transform: translate(0);
+}
+
+.results__header {
+  color: #046363;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.results__group {
+  padding: 3rem 0;
+  list-style: none;
+}
+
+.result__items {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result__items:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.result__items:nth-child(odd) {
+  background-color: #e4e3e3;
+}
+
+.result__title {
+  font-weight: 900;
+}
+
+.result__value {
+  font-weight: 900;
+  color: #0a8686;
+}
+
+img {
+  display: block;
+  height: 25rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+#country_result {
+  color: #0a8686;
+  font-weight: 900;
+}

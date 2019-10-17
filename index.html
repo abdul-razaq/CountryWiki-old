@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Country Details</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="main-header">Country Wiki</h1>
+      <p class="description">Get Quick facts and figures about any country!</p>
+      <div class="form-group">
+        <input
+          type="search"
+          class="form__input"
+          placeholder="Search for a country..."
+        />
+
+        <button class="btn">Search Country!</button>
+      </div>
+    </main>
+
+    <img src="./gif3.gif" alt="Loader" />
+    <section class="results container">
+      <h2 class="results__header">
+        Quick Results for <span id="country_result"></span>
+      </h2>
+      <ul class="results__group">
+        <li class="result__items">
+          <span class="result__title">Geolocation:</span>
+          <span class="result__value" id="geolocation_value"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Country Name:</span>
+          <span class="result__value" id="country_name"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Capital:</span>
+          <span class="result__value" id="capital"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Continent:</span>
+          <span class="result__value" id="continent"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Alternate Spellings:</span>
+          <span class="result__value" id="alternate_spellings"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Area Code:</span>
+          <span class="result__value" id="area_code"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Demonym:</span>
+          <span class="result__value" id="demonym"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Gini:</span>
+          <span class="result__value" id="gini"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Languages Spoken:</span>
+          <span class="result__value" id="languages_spoken"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Borders:</span>
+          <span class="result__value" id="borders"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Native Names:</span>
+          <span class="result__value" id="native_names"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Total Population:</span>
+          <span class="result__value" id="total_population"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Region on the Globe:</span>
+          <span class="result__value" id="region"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Relevance:</span>
+          <span class="result__value" id="relevance"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Sub Region around the Globe:</span>
+          <span class="result__value" id="subregion"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Calling Code:</span>
+          <span class="result__value" id="calling_code"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Country Code:</span>
+          <span class="result__value" id="country_code"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">ISO Code:</span>
+          <span class="result__value" id="iso_code"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">ISO Numeric:</span>
+          <span class="result__value" id="iso_numeric"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Currency Name:</span>
+          <span class="result__value" id="currency_name"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Currency SubUnit:</span>
+          <span class="result__value" id="currency_subunit"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Currency SubUnit To Unit:</span>
+          <span class="result__value" id="currency_subunit_to_unit"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Currency Symbol:</span>
+          <span class="result__value" id="currency_symbol"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Alternate Currency Symbols:</span>
+          <span class="result__value" id="currency_alternate_symbols"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Flag:</span>
+          <span class="result__value" id="flag"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Currency Symbol Comes First:</span>
+          <span class="result__value" id="is_symbol_first"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Offset Seconds:</span>
+          <span class="result__value" id="offset_seconds"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Offset String:</span>
+          <span class="result__value" id="offset_string"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Qibla:</span>
+          <span class="result__value" id="qibla"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Road Drive On:</span>
+          <span class="result__value" id="road_drive_on"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Short TimeZone:</span>
+          <span class="result__value" id="short_time_zone"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Smallest Denomination:</span>
+          <span class="result__value" id="smallest_denomination"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Speed Measurement:</span>
+          <span class="result__value" id="speed_measurement"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Sun Rise:</span>
+          <span class="result__value" id="sun_rise"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Sun Set:</span>
+          <span class="result__value" id="sun_set"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Thousand Separator:</span>
+          <span class="result__value" id="thousand_separator"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Time Zone:</span>
+          <span class="result__value" id="timezone"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">TimeZones:</span>
+          <span class="result__value" id="timezones"></span>
+        </li>
+        <li class="result__items">
+          <span class="result__title">Top Level Domains:</span>
+          <span class="result__value" id="top_level_domains"></span>
+        </li>
+      </ul>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
