@@ -1,8 +1,8 @@
 // Country Wiki App
 class CountryWiki {
   constructor() {
-    this.apiKey = 'cd2b5b769d5f471a8f73429a1ea9317c';
-    this.apiKey2 = 'a12c7381c7msh85117c1d51fd1f7p196317jsn4deb9efab4b1';
+    this.apiKey = '';
+    this.apiKey2 = '';
     this.formInput = document.querySelector('.form__input');
     this.searchButton = document.querySelector('.btn');
     this.resultsContainer = document.querySelector('.results');
